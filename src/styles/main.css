@@ -51,7 +51,7 @@ header button {
 }
 
 .mobile-menu svg {
-    @apply ml-[10.5rem] mt-6
+    @apply ml-32 sm:ml-[10.5rem] mt-6
 }
 
 ul {
@@ -82,7 +82,7 @@ ul {
 
 
 .form-container {
-    @apply lg:flex lg:flex-row justify-between items-center flex flex-col mx-10
+    @apply lg:flex lg:flex-row justify-between items-center flex flex-col sm:mx-10 mx-6
 }
 
 .text {

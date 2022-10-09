@@ -17,11 +17,11 @@ const Header = () => {
                         <X size={32} />
                       </span>
 
-    const showHeaderIcon = <a href="/"><img src="/logo-dio.png" alt="logo-dio"
+    const showHeaderIcon = <a href="/"><img src="../../../public/logo-dio.png" alt="logo-dio"
                            className=" logo-dio" />
                            </a>
 
-    const hiddenHeaderIcon = <a href="/"><img src="/logo-dio.png" alt="logo-dio"
+    const hiddenHeaderIcon = <a href="/"><img src="../../../public/logo-dio.png" alt="logo-dio"
                              className="hidden logo-dio" />
                              </a>
 
