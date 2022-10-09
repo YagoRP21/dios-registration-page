@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply m-0 p-0 font-sans
+}
+
+body {
+    @apply bg-[#1E192C]
+}
+
+/* Header */
+
+.desktopNavBar {
+    @apply hidden md:flex
+}
+
+header {
+    @apply bg-[#151515] w-auto h-14 flex justify-between items-center
+}
+
+header .logo-dio {
+    @apply w-20 h-8 ml-14
+}
+
+header .nav-buttons {
+    @apply flex items-center justify-end text-right text-white mr-14 
+}
+
+header button {
+    @apply lg:mx-4
+}
+
+.home {
+    @apply hover:text-pink-700 duration-500
+}
+
+.entrar, .cadastrar {
+    @apply bg-[#565656] rounded-xl px-6 lg:px-10 hover:bg-pink-700 duration-500
+}
+
+/* Mobile Header */
+
+.hamburguer-icon, .close-icon {
+    @apply text-xl cursor-pointer mx-4 md:hidden block z-[9] text-white items-end justify-end
+}
+
+.mobile-menu {
+    @apply mt-12 text-center md:hidden z-[9] fixed top-0 bottom-0 left-0 right-0 bg-[#151515] h-screen inset-0
+}
+
+.mobile-menu svg {
+    @apply ml-[10.5rem] mt-6
+}
+
+ul {
+    @apply pt-2
+}
+
+.menu-list {
+    @apply mt-6 text-white
+}
+
+.buttons {
+    @apply flex flex-row items-center justify-center
+}
+
+.buttons .menu-list {
+    @apply mx-4
+}
+
+.buttons .cadastrar {
+    @apply bg-transparent border border-[#E4105D]
+}
+
+.buttons .entrar {
+    @apply bg-[#E4105D]
+}
+
+/* Register Page */
+
+
+.form-container {
+    @apply lg:flex lg:flex-row justify-between items-center flex flex-col mx-10
+}
+
+.text {
+    @apply mt-8 lg:w-80 lg:pl-6 lg:ml-52 lg:pt-20 flex flex-col items-start justify-center text-left
+}
+
+strong {
+    @apply text-white text-3xl mb-6
+}
+
+.voltar {
+    @apply text-[#864785] font-medium hover:border-b-2 hover:border-b-[#864785]
+}
+
+.form-title {
+    @apply mr-52
+}
+
+.gradient-detail {
+    @apply bg-gradientOne w-32 mt-2 mb-6 h-2 rounded-2xl
+}
+
+.form-title p {
+    @apply text-white my-4
+}
+
+.form-info {
+    @apply flex flex-col w-80
+}
+
+.form-input-container {
+    @apply flex flex-col mt-10
+}
+
+.form-info input {
+    @apply my-2 bg-transparent border-b border-b-zinc-600 placeholder:text-white placeholder:text-base py-2 px-6
+}
+
+.icon-user {
+    @apply text-[#8647AD] absolute lg:mt-5 mt-[1.2rem]
+}
+
+.icon-email {
+    @apply text-[#8647AD] absolute lg:pt-16 lg:mt-[0.8rem] mt-[4.8rem]
+}
+
+.icon-phone {
+    @apply text-[#8647AD] absolute lg:pt-32 lg:mt-2 mt-[8.3rem]
+}
+
+.icon-lock {
+    @apply text-[#8647AD] absolute lg:pt-44 lg:mt-[0.8rem] mt-[11.8rem]
+}
+
+.create-account-button {
+    @apply font-bold text-white text-opacity-50 text-center flex items-center justify-center bg-[#E4105D] px-8 py-2 rounded-3xl mt-8 hover:shadow-[#E4105D] hover:shadow-2xl hover:duration-200
+           after:absolute after:border after:border-solid after:border-[#E4105D]  after:w-80 after:h-14 after:rounded-full
+}
+
+.account-politics {
+    @apply mt-6
+}
+
+.politics {
+    @apply text-zinc-300
+}
+
+.login-option {
+    @apply flex font-bold text-sm mt-2 pb-10
+}
+
+.login-option p {
+    @apply text-white mr-2
+}
+
+.login-option button {
+    @apply text-emerald-400
+}
